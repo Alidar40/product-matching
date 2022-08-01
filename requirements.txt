@@ -1,0 +1,13 @@
+-f https://download.pytorch.org/whl/cu113
+torch==0.11.0
+torchvision==0.12.0
+numpy
+pandas
+scikit-learn
+matplotlib
+jupyter
+pytorch-lightning
+pytorch-metric-learning
+sentence-transformers
+faiss-gpu
+wandb

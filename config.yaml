@@ -1,0 +1,20 @@
+train_data_path: "/home/alidar/Dev/product-matching/train_data.csv"
+test_data_path: "/home/alidar/Dev/product-matching/test_data.csv"
+
+embedder: "fasttext_id"
+use_tfidf: false
+model: "model"
+ckpt_path: "checkpoints/edo2k6vi/model-epoch=19-val_loss=0.59.ckpt"
+continue_from_ckpt: false
+epochs: 500
+batch_size: 1024
+num_workers: 2
+log_every_n_step: 3
+val_check_interval: 1.0
+
+wandb:
+    project: "product-matching"
+    name: "as_model" # if 'as_model' then name will be taken from 'model' parameter
+    mode: "online" # online or disabled
+
+seed: 42
